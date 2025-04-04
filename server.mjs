@@ -14,6 +14,7 @@ app.get("/test1", (req, res) => {
   res.status(200).json("Welcome to the error handler");
 });
 
+// Commit dev branching
 app.use((err, req, res, next) => {
   console.error(err);
   res.status(500).send(err.message);
