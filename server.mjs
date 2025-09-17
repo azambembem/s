@@ -20,11 +20,6 @@ app.use((err, req, res, next) => {
   next();
 });
 
-// app.post("/test", (req, res) => {
-//   const { name, age } = req.body;
-//   res.send(`name: ${name}, age: ${age}`);
-// });
-
 const PORT = process.env.PORT || 6060;
 
 app.listen(PORT, () => {
