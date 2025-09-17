@@ -19,6 +19,9 @@ app.get("/test2", (req, res) => {
 app.get("/test3", (req, res) => {
   res.status(404).json("Welcome to the error handler");
 });
+app.get("/test4", (req, res) => {
+  res.status(400).json("Welcome to the error handler");
+});
 
 app.use((err, req, res, next) => {
   console.error(err);
