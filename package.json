@@ -23,9 +23,8 @@
     "morgan": "^1.10.0"
   },
   "lint-staged": {
-    "*.mjs": [
-      "eslint --fix",
-      "prettier --write"
-    ]
-  }
+  "*.mjs": ["eslint --fix", "prettier --write"],
+  "*.js": ["eslint --fix", "prettier --write"]
+}
+
 }
