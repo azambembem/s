@@ -6,7 +6,7 @@ const app = express();
 app.use(express.json());
 
 app.get("/test1", (req, res) => {
-  res.status(200).json("test1");
+  res.status(200).json("test12");
 });
 
 const PORT = process.env.PORT || 6060;
