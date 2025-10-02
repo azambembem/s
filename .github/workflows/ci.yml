@@ -1,5 +1,7 @@
+# workflow 이름
 name: Node.js CI/CD
 
+# Event: push bo'ladigan branchni belgilaydi
 on:
   push:
     branches: [dev]
@@ -8,11 +10,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v4 # ? 
+      - uses: actions/setup-node@v4 # ?
         with:
           node-version: 20
-     
+      - run: npm ci # npm ci npm i bilan birxil lekin versilarda o'zgarmaydi
+      - run: npm test # ?
 
   deploy:
     needs: build
