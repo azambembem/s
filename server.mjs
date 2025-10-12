@@ -10,7 +10,8 @@ app.get("/test1", (req, res) => {
 });
 
 app.post("/test2", (req, res) => {
-  console.log("test3);
+  console.log("test3");
+  console.log('test4')
 });
 
 const PORT = process.env.PORT || 6060;
