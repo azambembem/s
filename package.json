@@ -4,12 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "postinstall": "husky install",
-    "format": "prettier --cache --write .",
-    "lint": "eslint --cache .",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.mjs",
-    "dev": "nodemon server.mjs"
+    "dev": "nodemon server.mjs",
+    "prepare": "husky"
   },
   "keywords": [],
   "author": "",
@@ -20,18 +18,14 @@
     "nodemon": "^3.1.9"
   },
   "devDependencies": {
+    "eslint": "^9.36.0",
     "husky": "^9.1.7",
     "lint-staged": "^16.2.3",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "prettier": "^3.6.2"
   },
   "lint-staged": {
-    "*.mjs": [
-      "eslint --fix",
-      "prettier --write"
-    ],
-    "*.js": [
-      "eslint --fix",
-      "prettier --write"
-    ]
+    "*.js": "eslint --cache --fix",
+    "*.{js,css,md}": "prettier --write"
   }
 }
