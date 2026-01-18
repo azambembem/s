@@ -11,11 +11,12 @@ app.get("/test1", (req, res) => {
 
 app.post("/test2", (req, res) => {
   console.log("test3");
-  console.log('test4')
+  console.log("test4");
 });
 
 const PORT = process.env.PORT || 6060;
 
 app.listen(PORT, () => {
   console.log(`Server is running on port1 ${PORT}`);
+  console.log("Server is running on port2");
 });
