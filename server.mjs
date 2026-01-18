@@ -10,6 +10,7 @@ app.get("/test1", (req, res) => {
 });
 
 app.post("/test2", (req, res) => {
+  Z;
   console.log("test3");
   console.log("test4");
 });
