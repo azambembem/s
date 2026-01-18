@@ -19,4 +19,5 @@ const PORT = process.env.PORT || 6060;
 app.listen(PORT, () => {
   console.log(`Server is running on port1 ${PORT}`);
   console.log("Server is running on port2");
+  console.log("Server is running on port3");
 });
